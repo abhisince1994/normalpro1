@@ -36,5 +36,45 @@ for(let i=0;i<itemlist.length;i++){
 
 
 
+//use of querySelector() and querySelectorAll()
+
+// Write the code as shown in the video below:
+const basketheading=document.querySelector('#basket-heading');
+basketheading.style.color='brown';
+basketheading.style.marginLeft='30px';
+
+const mainHeading=document.querySelector('#main-heading');
+mainHeading.style.textAlign='right'
+
+const fruitsitem=document.querySelector('.fruits');
+fruitsitem.style.backgroundColor='lightgrey';
+fruitsitem.style.padding='30px';
+fruitsitem.style.margin='30px';
+fruitsitem.style.width='50%';
+fruitsitem.style.borderRadius='5px';
+fruitsitem.style.listStyleType='none';
 
 
+const fruitsitems=document.querySelectorAll('.fruit');
+for(let i=0;i<fruitsitems.length;i++){
+  fruitsitems[i].style.backgroundColor='white';
+  fruitsitems[i].style.padding='10px'
+  fruitsitems[i].style.margin='10px'
+  fruitsitems[i].style.borderRadius='5px';
+}
+
+// const evenfruitsitem=document.querySelectorAll('.fruit:nth-child(even)');
+// for(let i=0;i<evenfruitsitem.length;i++){
+//   evenfruitsitem[i].style.backgroundColor='brown'
+// }
+const evenFruitsItems = document.querySelectorAll('.fruit:nth-child(even)');
+
+for (let i = 0; i < evenFruitsItems.length; i++) {
+    evenFruitsItems[i].style.backgroundColor = 'brown';
+    evenFruitsItems[i].style.color = 'white';
+  
+}
+
+
+
+// Write answer to the questions asked below:
